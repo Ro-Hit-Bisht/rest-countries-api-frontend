@@ -1,0 +1,32 @@
+@use "./Scss/Global";
+
+body {
+  letter-spacing: 0.5px;
+}
+
+#Header {
+  height: 5rem;
+  width: 100%;
+  padding: 0 3vw 0 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  overflow: hidden;
+  padding: 3rem;
+}
+
+@media screen and (max-width: "570px") {
+  main {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: "334px") {
+  main {
+    padding: 3rem 0rem;
+    text-align: center;
+  }
+}

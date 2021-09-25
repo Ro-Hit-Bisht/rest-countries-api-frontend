@@ -1,0 +1,175 @@
+#CountryInfo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40rem;
+  position: relative;
+
+  #Country_Flag {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  #Country_Info {
+    position: absolute;
+    left: 50%;
+    padding: 0 5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    #Info {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+
+      #Info_1 {
+        margin: 0 7rem 1rem 0;
+      }
+
+      #Info_1,
+      #Info_2 {
+        article {
+          display: flex;
+          align-items: center;
+          margin-bottom: 0.5rem;
+          h3 {
+            margin: 0 0.25rem 0 0;
+          }
+          p {
+            margin: 0 0 0 0.25rem;
+          }
+        }
+      }
+    }
+
+    #Borders {
+      h2 {
+        min-width: 200px;
+        padding: 0 1rem 0 0;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        #None {
+          padding: 0.5rem 1rem;
+          margin: 0;
+        }
+
+        li {
+          list-style: none;
+          padding: 0.5rem 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 0.5rem 1rem 0;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #CountryInfo {
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    position: initial;
+
+    #Country_Flag {
+      height: 20rem;
+      width: 100%;
+      position: initial;
+    }
+
+    #Country_Info {
+      position: initial;
+      padding: 0;
+
+      h1 {
+        margin: 1.5rem 0;
+      }
+
+      #Info {
+        width: 100%;
+        flex-direction: column;
+        justify-content: left;
+        margin-bottom: 3rem;
+
+        #Info_1,
+        #Info_2 {
+          margin-bottom: 2rem;
+        }
+      }
+
+      #Borders {
+        h2 {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "334px") {
+  #CountryInfo {
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    position: initial;
+
+    #Country_Flag {
+      height: 20rem;
+      width: 100%;
+      position: initial;
+    }
+
+    #Country_Info {
+      position: initial;
+      padding: 0;
+
+      h1 {
+        margin: 1.5rem 0;
+      }
+
+      #Info {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 3rem;
+
+        #Info_1,
+        #Info_2 {
+          margin-bottom: 2rem;
+        }
+      }
+
+      #Borders {
+        h2 {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
