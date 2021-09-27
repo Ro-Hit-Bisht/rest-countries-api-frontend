@@ -1,13 +1,12 @@
 #Countries {
-  display: flex;
-  align-items: center;
-  // justify-content: center;
-  flex-wrap: wrap;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(250px + 2rem), 1fr));
 
   &_Card {
     margin: 1rem;
-    height: 340px;
-    width: 200px;
+    height: 350px;
+    width: 250px;
 
     a {
       text-decoration: none;
@@ -35,38 +34,68 @@
   }
 }
 
-@media screen and (max-width: "570px") {
+@media screen and (max-width: "670px") {
   #Countries {
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-  &_Card {
-    margin: 1rem;
-    height: 340px;
-    width: 200px;
+    &_Card {
+      margin: 1rem;
+      height: 350px;
+      width: 200px;
 
-    a {
-      text-decoration: none;
+      a {
+        text-decoration: none;
 
-      figure {
-        height: 50%;
-        width: 100%;
-
-        img {
-          height: 100%;
+        figure {
+          height: 50%;
           width: 100%;
-        }
-      }
 
-      h1 {
-        padding: 1rem;
-        font-size: 17px;
-      }
-      h2 {
-        font-size: 15px;
-        font-weight: normal;
-        padding: 0 1rem 0.5rem 1rem;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        h1 {
+          padding: 1rem;
+          font-size: 17px;
+        }
+        h2 {
+          font-size: 15px;
+          font-weight: normal;
+          padding: 0 1rem 0.5rem 1rem;
+        }
       }
     }
   }
 }
+
+@media screen and (max-width: "540px") {
+  #Countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_Card {
+      margin: 1rem;
+      height: 340px;
+      width: 65%;
+    }
+  }
+}
+
+@media screen and (max-width: "382px") {
+  #Countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_Card {
+      margin: 1rem;
+      height: 340px;
+      width: 75%;
+    }
+  }
 }

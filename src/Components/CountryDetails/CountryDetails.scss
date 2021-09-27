@@ -133,28 +133,19 @@
 
 @media screen and (max-width: "334px") {
   #CountryInfo {
-    align-items: flex-start;
-    flex-direction: column;
-    height: auto;
-    position: initial;
-
-    #Country_Flag {
-      height: 20rem;
-      width: 100%;
-      position: initial;
-    }
-
     #Country_Info {
       position: initial;
       padding: 0;
 
       h1 {
         margin: 1.5rem 0;
+        text-align: center;
       }
 
       #Info {
         width: 100%;
         flex-direction: column;
+        justify-content: left;
         margin-bottom: 3rem;
 
         #Info_1,
@@ -164,6 +155,7 @@
       }
 
       #Borders {
+        text-align: center;
         h2 {
           width: 100%;
           padding: 0;

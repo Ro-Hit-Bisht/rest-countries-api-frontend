@@ -12,3 +12,9 @@
     justify-content: space-evenly;
   }
 }
+
+@media screen and (max-width: "334px") {
+  #Back_Btn {
+    margin: 0 0 3rem 1rem;
+  }
+}
