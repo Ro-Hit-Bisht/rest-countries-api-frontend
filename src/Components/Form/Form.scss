@@ -18,7 +18,6 @@ form {
       width: 15%;
       position: relative;
       border-radius: 5px 0 0 5px;
-      border-bottom: 1px solid white;
 
       img {
         position: absolute;
@@ -70,6 +69,7 @@ form {
 
     section {
       width: 100%;
+      height: 2.5rem;
       margin-bottom: 3rem;
 
       input {

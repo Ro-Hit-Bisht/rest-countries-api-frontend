@@ -26,11 +26,11 @@ function Form(props) {
             Theme
               ? {
                   background: "hsl(209, 23%, 22%)",
-                  borderBottom: "3px solid hsl(0, 0%, 100%)",
+                  borderBottom: "2.5px solid hsl(0, 0%, 100%)",
                 }
               : {
                   background: "hsl(0, 0%, 100%)",
-                  borderBottom: "3px solid hsl(209, 23%, 22%)",
+                  borderBottom: "2.5px solid hsl(209, 23%, 22%)",
                 }
           }
         >
@@ -48,12 +48,12 @@ function Form(props) {
               ? {
                   background: "hsl(209, 23%, 22%)",
                   color: "hsl(0, 0%, 100%)",
-                  borderBottom: "3px solid hsl(0, 0%, 100%)",
+                  borderBottom: "2.5px solid hsl(0, 0%, 100%)",
                 }
               : {
                   background: "hsl(0, 0%, 100%)",
                   color: "hsl(0, 0%, 52%)",
-                  borderBottom: "3px solid hsl(209, 23%, 22%)",
+                  borderBottom: "2.5px solid hsl(209, 23%, 22%)",
                 }
           }
           onChange={(e) => {
