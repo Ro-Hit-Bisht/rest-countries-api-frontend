@@ -23,7 +23,7 @@ function CountryDetails(props) {
         .map((country) => {
           const {
             alpha2Code, // "String"
-            flags, // "Array"
+            flag, // "svg"
             name, // "string"
             nativeName, // "string"
             population, // Int
@@ -48,7 +48,7 @@ function CountryDetails(props) {
             >
               <figure id="Country_Flag">
                 <img
-                  src={`${flags[0]}#svgView(preserveAspectRatio(none))`}
+                  src={`${flag}#svgView(preserveAspectRatio(none))`}
                   alt={`${name}_Flag`}
                 />
               </figure>

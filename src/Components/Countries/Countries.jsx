@@ -15,7 +15,7 @@ function Countries(props) {
     return (
       <section id="Countries">
         {props.countrieslist.map((country) => {
-          const { alpha2Code, flags, name, population, region, capital } =
+          const { alpha2Code, flag, name, population, region, capital } =
             country;
 
           return (
@@ -38,7 +38,7 @@ function Countries(props) {
               >
                 <figure id="Flag">
                   <img
-                    src={`${flags[0]}#svgView(preserveAspectRatio(none))`}
+                    src={`${flag}#svgView(preserveAspectRatio(none))`}
                     alt={`${name}_Flag`}
                   />
                 </figure>
