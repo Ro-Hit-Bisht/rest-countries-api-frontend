@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## This is the live preview of the website
+[Click Here](https://rest-countries-api-frontend.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
