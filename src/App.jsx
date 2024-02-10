@@ -37,7 +37,7 @@ function App() {
           setData(body);
         });
     } else if (Region !== "") {
-      fetch(`https://restcountries.com/v2/continent/${Region}`)
+      fetch(`https://restcountries.com/v2/region/${Region}`)
         .then((res) => {
           return res.json();
         })
